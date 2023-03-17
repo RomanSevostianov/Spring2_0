@@ -35,3 +35,5 @@ build/
 /mvnw
 /src/main/resources/
 /pom.xml
+/.mvn/
+/.mvn/
