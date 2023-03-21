@@ -1,18 +1,11 @@
 package com.example.recipe2_0.services;
-
-import com.example.recipe2_0.model.Ingredients;
 import com.example.recipe2_0.model.Recipe;
 
 public interface RecipeService {
 
+    Recipe getRecipe(int number);
 
-    void addIngredients (Ingredients ingredients);
+    int addRecipe(Recipe recipe);
 
-
-    void getRecipe(Recipe recipe);
-
-    void getIngredients(Ingredients ingredients);
-
-
-    void addRecipe(Recipe recipe);
+   Recipe removeRecipe (int number);
 }

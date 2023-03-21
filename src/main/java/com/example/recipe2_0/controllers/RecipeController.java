@@ -1,6 +1,5 @@
 package com.example.recipe2_0.controllers;
 
-import com.example.recipe2_0.model.Ingredients;
 import com.example.recipe2_0.model.Recipe;
 import com.example.recipe2_0.services.RecipeService;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,9 +15,15 @@ public class RecipeController {
         this.recipeService = recipeService;
     }
 
+
     @GetMapping("/addNewRecipe")
-    public void addRecipes(@RequestParam  Recipe recipe) {
-        this.recipeService.addRecipe(recipe);
+    public int addRecipes(@RequestParam  Recipe recipe) {
+       return recipeService.addRecipe(recipe);
+    }
+
+    @GetMapping ("/getRecipe")
+    public void getRecipe (@RequestParam int number){
+       recipeService.getRecipe(number);
     }
 
 }
