@@ -1,11 +1,14 @@
 package com.example.recipe2_0.services;
+
 import com.example.recipe2_0.model.Recipe;
 
 public interface RecipeService {
 
-    Recipe getRecipe(int number);
+    Recipe getRecipe(long id);
 
-    int addRecipe(Recipe recipe);
+    long postRecipe(Recipe recipe);
 
-   Recipe removeRecipe (int number);
+    Recipe putRecipe(long id, Recipe recipe);
+
+    Recipe deleteRecipe(long id);
 }

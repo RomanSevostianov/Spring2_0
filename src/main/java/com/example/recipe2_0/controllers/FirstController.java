@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class FirstController {
     @GetMapping("*")
     public String firstWorld (){
-        return  "Первая работа";
+        return  "Первая      работа работа";
     }
 
 }
